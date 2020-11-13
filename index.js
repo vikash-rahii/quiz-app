@@ -16,7 +16,7 @@ const db = require("./config/key").mongoURI;
 connectDB();
 
 
-app.get("/", (req, res) => res.send("hello world"));
+app.get("/", (req, res) => res.send("api' are running you can use postman for checking purpose"));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`server is running on port ${port}`));
